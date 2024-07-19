@@ -21,19 +21,19 @@ Currently, we are on version 1.10. Other versions will be released in the future
 
 ## To-Do List
 ### Updates & Features
-- [x] **Mobile Optimization**: Ensure smooth gameplay on mobile devices.
-- [x] **PC Version**: Develop and test the PC version of PhoenixCraft.
-- [x] **New Features**: 
-  - [x] Add new Minecraft gameplay elements and mechanics.
-  - [x] Improve UI/UX for a better user experience.
-- [x] **Bug Fixes**: 
-  - [x] Address any bugs reported by users.
-  - [x] Optimize performance to enhance stability.
-- [x] **Additional Content**: 
-  - [x] Add more in-game items and interactions.
-  - [x] Implement new maps and environments.
-- [x] **User Feedback**: 
-  - [x] Gather feedback from users and make necessary adjustments.
-- [x] **Documentation**: 
-  - [x] Update documentation and provide more detailed guides for users.
-- Make a offline version when u don't have Wi-Fi. [x]
+- [❌️] **Mobile Optimization**: Ensure smooth gameplay on mobile devices.
+- [❌️] **PC Version**: Develop and test the PC version of PhoenixCraft.
+- [❌️] **New Features**: 
+  - [❌️] Add new Minecraft gameplay elements and mechanics.
+  - [❌️] Improve UI/UX for a better user experience.
+- [❌️] **Bug Fixes**: 
+  - [❌️] Address any bugs reported by users.
+  - [❌️] Optimize performance to enhance stability.
+- [❌️] **Additional Content**: 
+  - [❌️] Add more in-game items and interactions.
+  - [❌️] Implement new maps and environments.
+- [❌️] **User Feedback**: 
+  - [❌️] Gather feedback from users and make necessary adjustments.
+- [❌️] **Documentation**: 
+  - [❌️] Update documentation and provide more detailed guides for users.
+- Make a offline version when u don't have Wi-Fi. [❌️]
