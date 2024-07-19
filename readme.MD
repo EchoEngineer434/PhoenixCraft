@@ -18,4 +18,4 @@ I'm not responsible for anything u do with the project, it's not my fault if u g
 
 
 # Version
-Right now i'm doing 4.0, 1.8 will come out soon! RC 4.0: https://eaglercraftx1-8.github.io/1.8/resent4.0/index.html
+Right now we only have version 1.10 other versions will come soon!
