@@ -2,7 +2,7 @@
 - Resent Client has the feature multiplayer and singleplayer, cause it's mean to be it and not singleplayer. basically resent client is just Eaglercraft with better Texture, bg and Design Imo
 
 # My goal
-- my goal is Try to make Resent Client run on mobile, using FlamedDogo99 his Userscript. 
+- my goal is Try to make Resent Client run on mobile, using Irv77 his Userscript. 
 
 # WARNING
 I'm not responsible for anything u do with the project, it's not my fault if u get banned from the servers/website. so use it as a normal man and be smart.
