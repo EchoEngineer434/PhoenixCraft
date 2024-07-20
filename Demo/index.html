@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play PhoenixCraft 1.10 in your browser">
+    <meta name="keywords" content="PhoenixCraft, Minecraft, 1.10, 1.10.2">
+    <title>PhoenixCraft 1.10</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PhoenixCraft 1.10">
+    <meta property="og:description" content="Play PhoenixCraft 1.10 in your browser">
+    <meta property="og:image" content="favicon.png">
+    <link type="image/png" rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <script type="text/javascript" src="Classes.js"></script>
+    <script type="text/javascript" src="PhoenixCraft.user.js"></script>
+    <script type="text/javascript">
+        "use strict";
+        window.addEventListener("load", () => {
+            if (document.location.href.startsWith("file:")) {
+                alert("Please use HTTP, do not open this file locally. Run a local HTTP server and load it via HTTP");
+            } else {
+                
+                // Launch options
+                
+                const relayId = Math.floor(Math.random() * 3);
+                window.phoenixCraftOpts = {
+                    demoMode: false,
+                    container: "game_frame",
+                    assetsURI: "assets.epk",
+                    localesURI: "lang/",
+                    worldsDB: "worlds",
+                    servers: [
+                        /* example: { addr: "ws://localhost:8081/", name: "Local test server" } */
+                    ],
+                    relays: [
+                        { addr: "wss://relay.phoenixcraft1.com/", comment: "PhoenixCraft relay #1", primary: relayId == 0 },
+                        { addr: "wss://relay.phoenixcraft2.com/", comment: "PhoenixCraft relay #2", primary: relayId == 1 },
+                        { addr: "wss://relay.phoenixcraft3.com/", comment: "PhoenixCraft relay #3", primary: relayId == 2 }
+                    ]
+                };
+                
+                // Handle URL parameters
+                var q = window.location.search;
+                if (typeof q === "string" && q.startsWith("?")) {
+                    q = new URLSearchParams(q);
+                    var s = q.get("server");
+                    if (s) window.phoenixCraftOpts.joinServer = s;
+                }
+                
+                main();
+                
+            }
+        });
+    </script>
+</head>
+<body style="margin:0px;width:100vw;height:100vh;overflow:hidden;" id="game_frame">
+</body>
+</html>
